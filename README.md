@@ -1,0 +1,4 @@
+- ToDoList uygulaması  kotlin programlama dili yapılmıştır.
+- SqLite ve Room Veritabanı kullanılmıştır.
+- Tasarımı basit ve çok uğraşılmamıştır.
+- Uygulamaya yeni görevler ekleyebilir, gorebilir ve güncelleyebilirsiniz.
