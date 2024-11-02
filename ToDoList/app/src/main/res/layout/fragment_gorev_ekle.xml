@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.GorevEkle">
+
+    <Button
+        android:id="@+id/KayitButton"
+        android:layout_width="213dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="50dp"
+        android:text="Kaydet"
+        android:textColorLink="#051666"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/DetayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Görev Eklemeye Başlayalım"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="500dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="150dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textGorevBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Görev Başlığı"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editGorevBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="(örn:Ev Ödevim)"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textGorevKonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Görev Konusu"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editGorevKonu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="(örn: Matematik)"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textGorevDurum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Görev Durumu"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+
+        <Switch
+            android:id="@+id/editGorevDurumu"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="Yapılmadı / Yapıldı"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textGorevTarihi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Görev Son Tarihi"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="(01.01.2001"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textGorevAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Görev Açıklaması"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editGorevAciklama"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:ems="10"
+            android:hint="(örn: Matematik Ödevlerimi tamamlamam lazım.)"
+            android:inputType="textMultiLine"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

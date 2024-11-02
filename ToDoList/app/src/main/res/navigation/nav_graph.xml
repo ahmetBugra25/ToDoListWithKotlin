@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anaMenuFragment">
+
+    <fragment
+        android:id="@+id/anaMenuFragment"
+        android:name="com.balkaya.todolist.view.AnaMenuFragment"
+        android:label="fragment_ana_menu"
+        tools:layout="@layout/fragment_ana_menu" >
+        <action
+            android:id="@+id/action_anaMenuFragment_to_gorevlerFragment"
+            app:destination="@id/gorevlerFragment" />
+        <action
+            android:id="@+id/action_anaMenuFragment_to_gorevEkle"
+            app:destination="@id/gorevEkle" />
+    </fragment>
+    <fragment
+        android:id="@+id/gorevlerFragment"
+        android:name="com.balkaya.todolist.view.GorevlerFragment"
+        android:label="fragment_gorevler"
+        tools:layout="@layout/fragment_gorevler" >
+        <action
+            android:id="@+id/action_gorevlerFragment_to_gorevDetayFragment2"
+            app:destination="@id/gorevDetayFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/gorevEkle"
+        android:name="com.balkaya.todolist.view.GorevEkle"
+        android:label="fragment_gorev_ekle"
+        tools:layout="@layout/fragment_gorev_ekle" />
+    <fragment
+        android:id="@+id/gorevDetayFragment2"
+        android:name="com.balkaya.todolist.view.GorevDetayFragment"
+        android:label="fragment_gorev_detay"
+        tools:layout="@layout/fragment_gorev_detay" >
+        <argument
+            android:name="IndexBilgisi"
+            app:argType="integer" />
+    </fragment>
+</navigation>
